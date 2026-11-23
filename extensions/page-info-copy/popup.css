@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 300px;
+  margin: 0;
+  color: #1f2937;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.description {
+  margin: 8px 0 16px;
+  color: #5b6472;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.page-info {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #f9fafb;
+}
+
+.info-item h2 {
+  margin: 0 0 4px;
+  color: #5b6472;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.info-value {
+  margin: 0;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.info-value.url {
+  color: #0f766e;
+}
+
+.copy-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+button {
+  min-height: 38px;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 6px;
+  background: #0f766e;
+  color: white;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #115e59;
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: wait;
+}
+
+button:focus-visible {
+  outline: 3px solid #5eead4;
+  outline-offset: 2px;
+}
+
+#status {
+  min-height: 18px;
+  margin: 10px 0 0;
+  color: #166534;
+  font-size: 12px;
+}
+
+#status.error {
+  color: #b91c1c;
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ページ情報をコピー</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>ページ情報をコピー</h1>
+      <p class="description">現在のページのタイトルとURLをコピーします。</p>
+      <section class="page-info" aria-label="現在のページ情報">
+        <div class="info-item">
+          <h2>タイトル</h2>
+          <p id="page-title" class="info-value">読み込み中…</p>
+        </div>
+        <div class="info-item">
+          <h2>URL</h2>
+          <p id="page-url" class="info-value url">読み込み中…</p>
+        </div>
+      </section>
+      <div id="copy-actions" class="copy-actions" aria-label="コピー形式">
+        <button type="button" data-format="title" disabled>タイトルをコピー</button>
+        <button type="button" data-format="url" disabled>URLをコピー</button>
+        <button type="button" data-format="both" disabled>両方をコピー</button>
+        <button type="button" data-format="markdown" disabled>Markdownでコピー</button>
+      </div>
+      <p id="status" role="status" aria-live="polite"></p>
+    </main>
+  </body>
+</html>
